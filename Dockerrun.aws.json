@@ -8,7 +8,7 @@
     "containerDefinitions": [
         {
             "name": "repo-worker",
-            "image": "304397978118.dkr.ecr.us-east-1.amazonaws.com/ayam:app-try-latest",
+            "image": "016433531930.dkr.ecr.us-east-1.amazonaws.com/repo-worker:app-latest",
             "cpu": 1024,
             "memory": 2048,
             "essential": true,
@@ -28,7 +28,7 @@
             "environment": [
                 {
                     "name": "DB_HOST",
-                    "value": "database-1.cp1kqg7xmjf4.us-east-1.rds.amazonaws.com"
+                    "value": "database-1.c7iehwkxea9z.us-east-1.rds.amazonaws.com"
                 },
                 {
                     "name": "DB_USER",
