@@ -28,28 +28,6 @@
                     "containerPort": 8000,
                     "hostPort": 8000
                 }
-            ],
-            "environment": [
-                {
-                    "name": "DB_HOST",
-                    "value": "database-1.c7iehwkxea9z.us-east-1.rds.amazonaws.com"
-                },
-                {
-                    "name": "DB_USER",
-                    "value": "admin"
-                },
-                {
-                    "name": "DB_PASSWORD",
-                    "value": "ambatukam"
-                },
-                {
-                    "name": "DB_DATABASE",
-                    "value": "crud_db"
-                },
-                {
-                    "name": "PORT",
-                    "value": "8000"
-                }
             ]
         }
     ]
