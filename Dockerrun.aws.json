@@ -2,7 +2,7 @@
     "AWSEBDockerrunVersion": 2,
     "volumes": [
         {
-            "name": "crud-data",
+            "name": "nodejsbasic",
             "host": {
                 "sourcePath": "/var/app/current"
             }
