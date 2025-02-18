@@ -2,7 +2,7 @@
     "AWSEBDockerrunVersion": 2,
     "volumes": [
         {
-            "name": "nodejsbasic",
+            "name": "crud-data",
             "host": {
                 "sourcePath": "/var/app/current"
             }
@@ -18,7 +18,7 @@
             "prvileged": true,
             "mountPoints": [
                 {
-                    "sourceVolume": "nodejsbasic",
+                    "sourceVolume": "crud-data",
                     "containerPath": "/var/app/current"
                 }
             ],
