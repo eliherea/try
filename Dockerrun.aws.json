@@ -2,7 +2,10 @@
     "AWSEBDockerrunVersion": 2,
     "volumes": [
         {
-            "name": "crud-data"
+            "name": "crud-data",
+            "host": {
+                "sourcePath": "/var/app/current"
+            }
         }
     ],
     "containerDefinitions": [
@@ -12,10 +15,11 @@
             "cpu": 1024,
             "memory": 2048,
             "essential": true,
+            "prvileged": true,
             "mountPoints": [
                 {
-                    "sourceVolume": "crud-data",
-                    "containerPath": "/var/app/current/nodejsbasic"
+                    "sourceVolume": "nodejsbasic",
+                    "containerPath": "/var/app/current"
                 }
             ],
             "portMappings": [
