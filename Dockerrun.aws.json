@@ -12,8 +12,8 @@
         {
             "name": "repo-worker",
             "image": "016433531930.dkr.ecr.us-east-1.amazonaws.com/repo-worker:app-latest",
-            "cpu": 1024,
-            "memory": 2048,
+            "cpu": 256,
+            "memory": 512,
             "essential": true,
             "prvileged": true,
             "mountPoints": [
