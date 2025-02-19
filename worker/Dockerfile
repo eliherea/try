@@ -19,4 +19,4 @@ RUN mkdir -p /mnt/efs
 EXPOSE 8000
 
 # Command to mount EFS and start application
-CMD ["sh", "-c", "mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport fs-0b17765e598a54b77.efs.us-east-1.amazonaws.com:/ /mnt/efs", "pm2-runtime", "npm", "--"," run start-prod"]
+CMD ["sh", "-c", "mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport fs-0f0357f157fbf3b7d.efs.us-east-1.amazonaws.com:/ /mnt/efs", "pm2-runtime", "npm", "--"," run start-prod"]

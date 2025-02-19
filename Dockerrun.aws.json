@@ -2,16 +2,13 @@
     "AWSEBDockerrunVersion": 2,
     "volumes": [
         {
-            "name": "crud-data",
-            "host": {
-                "sourcePath": "/var/app/current"
-            }
+            "name": "crud-data"
         }
     ],
     "containerDefinitions": [
         {
             "name": "repo-worker",
-            "image": "016433531930.dkr.ecr.us-east-1.amazonaws.com/repo-worker:app-latest",
+            "image": "016433531930.dkr.ecr.us-east-1.amazonaws.com/repo-worker:try-latest",
             "cpu": 256,
             "memory": 512,
             "essential": true,
@@ -19,7 +16,7 @@
             "mountPoints": [
                 {
                     "sourceVolume": "crud-data",
-                    "containerPath": "/var/app/current"
+                    "containerPath": "/var/app/current/nodejsbasic"
                 }
             ],
             "portMappings": [
